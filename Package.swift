@@ -50,27 +50,27 @@ let package = Package(
                 "Moya"
             ]
         ),
-        .target(
-            name: "ReactiveMoya",
-            dependencies: [
-                "Moya",
-                .product(name: "ReactiveSwift", package: "ReactiveSwift")
-            ]
-        ),
-        .target(
-            name: "RxMoya",
-            dependencies: [
-                "Moya",
-                .product(name: "RxSwift", package: "RxSwift")
-            ]
-        ),
+        // .target(
+        //     name: "ReactiveMoya",
+        //     dependencies: [
+        //         "Moya",
+        //         .product(name: "ReactiveSwift", package: "ReactiveSwift")
+        //     ]
+        // ),
+        // .target(
+        //     name: "RxMoya",
+        //     dependencies: [
+        //         "Moya",
+        //         .product(name: "RxSwift", package: "RxSwift")
+        //     ]
+        // ),
         .testTarget( // dev
             name: "MoyaTests",  // dev
             dependencies: [ // dev
                 "Moya", // dev
                 "CombineMoya", // dev
-                "ReactiveMoya", // dev
-                "RxMoya", // dev
+                // "ReactiveMoya", // dev
+                // "RxMoya", // dev
                 .product(name: "Quick", package: "Quick"), // dev
                 .product(name: "Nimble", package: "Nimble"), // dev
                 .product(name: "OHHTTPStubsSwift", package: "OHHTTPStubs") // dev
